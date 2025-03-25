@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Baking Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Potato Baking Appointment</h1>
+            <p>Book your appointment to get your potato baked just right!</p>
+        </header>
+
+        <main>
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" required>
+                </div>
+                <button type="submit">Book Appointment</button>
+            </form>
+
+            <div id="confirmation" class="hidden">
+                <h2>Appointment Confirmed!</h2>
+                <p>Your potato will be baked on <span id="conf-date"></span> at <span id="conf-time"></span>.</p>
+                <p>Thank you for choosing Potato Bake!</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Potato Bake Co.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
